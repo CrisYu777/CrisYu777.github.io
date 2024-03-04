@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 容器样式 */
+.container {
+    padding: 20px;
+}
+
+/* 标题样式 */
+h1, h2 {
+    color: #333;
+}
+
+/* 主要内容区域的样式 */
+#bio {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center; /* 修正错误的类名 text center -> text-align: center */
+}
+
+/* 图片样式 */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* 增加圆形图片 */
+    margin-bottom: 20px;
+}
+
+/* 列表样式 */
+ul, ol {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* 列表项样式 */
+li {
+    margin-bottom: 10px;
+}
+
+/* 按钮样式 */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* 响应式布局的调整 */
+@media (max-width: 768px) {
+    #bio, #more {
+        text-align: center;
+    }
+    .btn-primary {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+}

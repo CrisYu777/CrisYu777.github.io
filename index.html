@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Bio Page</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            color: #495057;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            padding: 20px;
+        }
+        
+        /* 增强的标题样式 */
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            color: #495057;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            border-left: 5px solid #007bff;
+        }
+        
+        #bio {
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .img-fluid {
+            max-width: 50%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #007bff;
+        }
+        
+        /* 增强的列表样式 */
+        ul, ol {
+            padding: 0;
+        }
+        
+        li {
+            background-color: #ffffff;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            list-style-type: none;
+            border-left: 4px solid #007bff;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        
+        li:hover {
+            transform: translateX(10px);
+            background-color: #f8f9fa;
+        }
+        
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.2s;
+        }
+        
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: #0056b3;
+            outline: none;
+        }
+        
+        @media (max-width: 768px) {
+            .img-fluid {
+                max-width: 70%;
+            }
+        
+            .btn-primary {
+                display: block;
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="bio" class="col-12 col-lg-6 text center">
+                <h1>Cris Yu</h1>
+                <img src="photo.png" class="img-fluid">
+            </div>
+
+            <div id="more" class="col-12 col-lg-6">
+                <h2>Favorite Football Players</h2>
+                <ul>
+                    <li>Cristiano Ronaldo</li>
+                    <li>Philippe Coutinho</li>
+                    <li>Paul Dybala</li>
+                    <li>Fernando Torres</li>
+                    <li>Serigo Ramos</li> <!-- 小错误修正：Serigo Ramaos -> Serigo Ramos -->
+                </ul>
+                <h2>Favorite Football Team</h2>
+                <ol>
+                    <li>Portugal</li>
+                    <li>Liverpool</li>
+                    <li>Real Madrid</li>
+                    <li>Chengdu Rongcheng</li>
+                    <li>Newcastle United</li> <!-- 小错误修正：Unitied -> United -->
+                </ol>
+                <a href="https://www.facebook.com/profile.php?id=100084926816531" class="btn btn-primary">My Meta Profile</a>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
